@@ -1,0 +1,42 @@
+{
+  "name": "@nicktomlin/frequencies",
+  "version": "0.0.0",
+  "description": "A javscript port of clojure.core/frequencies",
+  "homepage": "",
+  "author": {
+    "name": "Nick Tomlin",
+    "email": "nick.tomlin@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "keywords": [ "" ],
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.2.1",
+    "nsp": "^2.6.3",
+    "prettier": "^1.7.0",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "prepublish": "nsp check",
+    "pretest": "standard",
+    "precommit": "lint-staged",
+    "test": "ava"
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "repository": "NickTomlin/node-frequencies",
+  "license": "MIT"
+}
