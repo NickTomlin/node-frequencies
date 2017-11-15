@@ -1,16 +1,13 @@
 {
   "name": "@nicktomlin/frequencies",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A javscript port of clojure.core/frequencies",
   "homepage": "",
   "author": {
     "name": "Nick Tomlin",
-    "email": "nick.tomlin@gmail.com",
-    "url": ""
+    "email": "nick.tomlin@gmail.com"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["index.js"],
   "main": "index.js",
   "keywords": [ "" ],
   "devDependencies": {
